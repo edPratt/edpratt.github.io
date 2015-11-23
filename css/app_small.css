@@ -1,0 +1,262 @@
+---
+---
+ 
+/* Includes. */
+
+/* End Includes. */ 
+ 
+html {
+    position: relative;
+    min-height:100%;
+}
+
+body {
+    margin-bottom: 20rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+div#page-wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+/* Site Header */
+header#site-header {
+}
+
+header#site-header div.container {
+  text-align: center;
+}
+
+header#site-header img {
+  margin: 0 auto;
+}
+
+header#site-header div.header-image {
+  width: 100%;
+  height: 27rem;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/img/worker.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+header#site-header div.header-image h1 {
+  color: #FFF;
+  text-align: center;
+  font-size: 3.25rem;
+  padding: 8rem 0.5rem 0 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header#site-header div.header-image h2 {
+  color: #FFF;
+  text-align: center;
+  font-size: 1.9rem;
+  padding: 0 0.5rem;
+}
+
+header#site-header div.header-image h3 {
+  color: #FFF;
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 0.5rem;
+}
+
+header#site-header div.header-image h3 a {
+    color: #FFF;
+}
+
+header#site-header div.header-image h3 a:hover {
+    text-decoration: none;
+}
+
+nav.navbar {
+    margin-top: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+nav.navbar ul.navbar-list {
+  margin-bottom: 0;
+  width: 100%;
+  text-align: justify;
+}
+
+nav.navbar ul.navbar-list:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+nav.navbar ul.navbar-list li {
+  margin-bottom: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+nav.navbar ul.navbar-list li a {
+  text-transform: uppercase;
+  line-height: 4rem;
+  text-decoration: none;
+  color: #222;
+}
+
+nav.navbar ul.navbar-list li a:hover {
+  color: #0FA0CE;
+}
+
+nav.navbar ul.navbar-list li.active {
+    font-weight: 600;
+}
+
+/* End Site Header */
+
+
+/* Site Content */
+
+main#site-content {
+    min-height: 20rem;
+    padding-bottom: 2rem;
+}
+
+main#site-content .tagline {
+    display: none;
+}
+
+main#site-content .mobile-tagline {
+    font-size: 2.25rem;
+}
+
+main#site-content img.category-image {
+    width: 100%;
+    height: auto;
+}
+
+main#site-content h4.category-title {
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+div.content-section {
+    margin: 4rem 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 1px solid #EEE;
+    padding-left: 1rem;
+    margin: 1rem 1rem 2.5rem 0;
+}
+
+blockquote footer {
+    text-align: right;
+}
+
+ul.products-list {
+    margin-left: 2rem;
+}
+
+img.content-image {
+    width: 100%;
+    height: auto;
+    border: 1px solid #EEE;
+    padding: 0.5rem;
+}
+
+img#cedar-impressions-image {
+    max-height: 250px;
+}
+
+img#energystar-logo {
+    height: 200px;
+    float: left;
+    margin-right: 4rem;
+}
+
+span.content-image-caption {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+div.gutter-image {
+    display: inline-block;
+}
+
+div.gutter-image img.content-image {
+    max-width: 100%;
+    width: auto;
+    margin: 0 1rem;
+    height: 250px;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+/* End Site Content */
+
+
+/* Site Footer */
+
+footer#site-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+form#contact-form .row {
+    margin-bottom: 0;
+}
+
+form#contact-form label.required:after {
+    content: ' (required)';
+    color: red;
+}
+
+form#contact-form textarea#id_message {
+    min-height: 10rem;
+}
+
+form#contact-form input[type=submit] {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 13px;
+}
+
+footer#site-footer section#footer-info {
+  min-height: 15rem;
+  /* background: rgb(226, 229, 236); */
+  background: #F7F7F7;
+}
+
+footer#site-footer section#footer-info div.footer-container {
+    padding-top: 2rem;
+    margin-bottom: 0;
+}
+
+/* End Site Footer */
+
+
+/* Overrides */
+div.container {
+    width: 90%;
+}
+/* End Overrides */
+
+
+/* Responsiveness */
+.hide-for-small {
+    display: none;
+}
