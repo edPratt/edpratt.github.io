@@ -12,9 +12,12 @@
     <nav class="navbar">
         <ul class="navbar-list">
             <li><a href="/">Home</a></li>
+            
+            <li {% if page.page_name == 'projects' %} class="active" {% endif %}><a href="/projects">Projects</a></li>
+        
+            
+            <li {% if page.page_name == 'contact' %} class="active" {% endif %}><a href="/contact">Contact</a></li>
             <!--
-            <li {% if page.page_name == 'roofing' %} class="active" {% endif %}><a href="/roofing">Roofing</a></li>
-            <li {% if page.page_name == 'siding' %} class="active" {% endif %}><a href="/siding">Siding</a></li>
             <li {% if page.page_name == 'windows' %} class="active" {% endif %}><a href="/windows">Windows</a></li>
             <li {% if page.page_name == 'gutters' %} class="active" {% endif %}><a href="/gutters">Gutters</a></li>
             <li {% if page.page_name == 'about' %} class="active" {% endif %}><a href="/about">About Us</a></li>
