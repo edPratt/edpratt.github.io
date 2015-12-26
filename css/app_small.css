@@ -165,6 +165,13 @@ ul.products-list {
     margin-left: 2rem;
 }
 
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
 img.content-image {
     width: 100%;
     height: auto;

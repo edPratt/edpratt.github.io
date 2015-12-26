@@ -138,6 +138,12 @@ main#site-content img.category-image {
     border: 1px solid #EEE;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
 div.content-section {
     margin: 6rem 0;
 }
