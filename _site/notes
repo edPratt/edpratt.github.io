@@ -1,5 +1,0 @@
- 		
-<section id="site-contact">
-    {% include contact_form.html %}
-</section>
-         
