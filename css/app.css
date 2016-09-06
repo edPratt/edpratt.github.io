@@ -28,8 +28,6 @@ div#page-wrapper {
 }
 
 /* Site Header */
-header#site-header {
-}
 
 header#site-header div.container {
   text-align: center;
@@ -38,11 +36,6 @@ header#site-header div.container {
 header#site-header img {
   margin: 0 auto;
 }
-
-/*div.header-pic {
-   padding:10px;
-   border:10px solid #021a40;
-}*/
 
 header#site-header div.header-image {
   width: 100%;
