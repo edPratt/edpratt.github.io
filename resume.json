@@ -1,0 +1,107 @@
+{
+  "basics": {
+    "name": "Edward Pratt",
+    "label": "Programmer",
+    "picture": "",
+    "email": "epratt8181@gmail.com",
+    "phone": "(617) 224-8637",
+    "website": "http://edpratt.github.io/",
+    "summary": "",
+    "location": {
+      "address": "45 Brewster Road",
+      "postalCode": "MA 02072",
+      "city": "Stoughton",
+      "countryCode": "MA",
+      "region": "Stoughton"
+    },
+    "profiles": [{
+        "network": "Twitter",
+        "username": "epsolos2",
+        "url": ""
+      },
+      {
+        "network": "SoundCloud",
+        "username": "realhotdad",
+        "url": "https://soundcloud.com/realhotdad"
+      }
+    ]
+  },
+  "work": [{
+    "company": "Cornerstone Real Estate",
+    "position": "Real Estate Agent",
+    "website": "https://www.cornerstoneboston.com/",
+    "startDate": "2017-07-25",
+    "endDate": "2019-01-01",
+    "summary": "Cornerstone is a busy office that deals in a wide variety of residential Real Estate including but not limited to rentals, sales, development, and property management.",
+    "highlights": [
+      "Brought in 30k in rental revenue in first month to office.",
+      "Continuing to grow business in the Boston area."
+    ]
+  },
+  {
+    "company": "Goldman Sachs",
+    "position": "Platform Engineer",
+    "startDate": "2016-01-16",
+    "endDate": "2016-06-16",
+    "summary": "Platform Engineering Division",
+    "highlights": [
+      "Developed test scripts using Python for Goldman Sachs’ contribution to the OCP (Open Compute Project) that is owned by Facebook",
+      "Helped plan the technology stack for a big data project used to better assess the status and health of thousands of proprietary servers",
+      "Developed Elastic Search instance in preparation for advanced data analysis of the firm’s roughly ~100,000 servers using the ELK (Elastic Search, Logstash, Kibana) stack"
+    ]
+  }],
+  "education": [{
+    "institution": "Northeastern University",
+    "area": "Computer Science",
+    "studyType": "Bachelor",
+    "startDate": "2012-09-01",
+    "endDate": "2018-04-05",
+    "gpa": "3.2",
+    "courses": [
+      "DB1101 - Basic SQL",
+      "CS2011 - Java Introduction"
+    ]
+  }],
+  "skills": [{
+      "name": "Web Development",
+      "level": "Mid-level",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Django REST",
+        "React",
+        "Redux"
+      ]
+    },
+    {
+      "name": "Scripting",
+      "level": "Mid-level",
+      "keywords": [
+        "Bash",
+        "Awk",
+        "Python",
+        "Ruby"
+      ]
+    }
+  ],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }],
+  "interests": [{
+    "name": "Artificial Intelligence",
+    "keywords": [
+      "Feature Engineering"
+    ]
+  },
+  {
+    "name": "Automation Engineering",
+    "keywords": [
+      "Python scripting"
+    ]
+  }],
+  "references": [{
+    "reference": "Available upon request."
+  }]
+}
