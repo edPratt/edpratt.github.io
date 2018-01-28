@@ -17,39 +17,57 @@
     "profiles": [{
         "network": "Twitter",
         "username": "epsolos2",
-        "url": ""
+        "url": "https://twitter.com/epsolos2"
       },
       {
         "network": "SoundCloud",
         "username": "realhotdad",
         "url": "https://soundcloud.com/realhotdad"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Edward Pratt",
+        "url": "https://www.linkedin.com/in/edwardpratt2/"
       }
     ]
   },
   "work": [{
-    "company": "Cornerstone Real Estate",
-    "position": "Real Estate Agent",
-    "website": "https://www.cornerstoneboston.com/",
-    "startDate": "2017-07-25",
-    "endDate": "2019-01-01",
-    "summary": "Cornerstone is a busy office that deals in a wide variety of residential Real Estate including but not limited to rentals, sales, development, and property management.",
-    "highlights": [
-      "Brought in 30k in rental revenue in first month to office.",
-      "Continuing to grow business in the Boston area."
-    ]
-  },
-  {
-    "company": "Goldman Sachs",
-    "position": "Platform Engineer",
-    "startDate": "2016-01-16",
-    "endDate": "2016-06-16",
-    "summary": "Platform Engineering Division",
-    "highlights": [
-      "Developed test scripts using Python for Goldman Sachs’ contribution to the OCP (Open Compute Project) that is owned by Facebook",
-      "Helped plan the technology stack for a big data project used to better assess the status and health of thousands of proprietary servers",
-      "Developed Elastic Search instance in preparation for advanced data analysis of the firm’s roughly ~100,000 servers using the ELK (Elastic Search, Logstash, Kibana) stack"
-    ]
-  }],
+      "company": "Cornerstone Real Estate",
+      "position": "Real Estate Agent",
+      "website": "https://www.cornerstoneboston.com/",
+      "startDate": "2017-07-25",
+      "endDate": "2019-01-01",
+      "summary": "Cornerstone is a busy office that deals in a wide variety of residential Real Estate including but not limited to rentals, sales, development, and property management",
+      "highlights": [
+        "Brought in 30k in rental revenue in first month to office.",
+        "Continuing to grow business in the Boston area"
+      ]
+    },
+    {
+      "company": "Hire an Esquire",
+      "position": "Web Developer",
+      "website": "https://hireanesquire.com/",
+      "startDate": "2017-04-01",
+      "endDate": "2017-07-30",
+      "summary": "Full Stack and Testing Engineer",
+      "highlights": [
+        "Utilized React, Redux, and Django to build out full stack features",
+        "Implemented front-end testing infrastructure using Jest and Mocha while also building out the first iteration of front-end tests"
+      ]
+    },
+    {
+      "company": "Goldman Sachs",
+      "position": "Platform Engineer",
+      "startDate": "2016-01-16",
+      "endDate": "2016-06-16",
+      "summary": "Platform Engineering Division",
+      "highlights": [
+        "Developed test scripts using Python for Goldman Sachs’ contribution to the OCP (Open Compute Project) that is owned by Facebook",
+        "Helped plan the technology stack for a big data project used to better assess the status and health of thousands of proprietary servers",
+        "Developed Elastic Search instance in preparation for advanced data analysis of the firm’s roughly ~100,000 servers using the ELK (Elastic Search, Logstash, Kibana) stack"
+      ]
+    }
+  ],
   "education": [{
     "institution": "Northeastern University",
     "area": "Computer Science",
@@ -90,17 +108,18 @@
     "fluency": "Native speaker"
   }],
   "interests": [{
-    "name": "Artificial Intelligence",
-    "keywords": [
-      "Feature Engineering"
-    ]
-  },
-  {
-    "name": "Automation Engineering",
-    "keywords": [
-      "Python scripting"
-    ]
-  }],
+      "name": "Artificial Intelligence",
+      "keywords": [
+        "Feature Engineering"
+      ]
+    },
+    {
+      "name": "Automation Engineering",
+      "keywords": [
+        "Python scripting"
+      ]
+    }
+  ],
   "references": [{
     "reference": "Available upon request."
   }]
