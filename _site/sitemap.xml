@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/</loc>
-  </url>
-  <url>
-    <loc>/projects/</loc>
-  </url>
-  <url>
-    <loc>/about/</loc>
-  </url>
-  <url>
-    <loc>/blog/</loc>
-  </url>
-  <url>
-    <loc>/contact/</loc>
-  </url>
-  <url>
-    <loc>/resume/index.html</loc>
-    <lastmod>2018-01-28T07:14:59-05:00</lastmod>
-  </url>
+<url>
+<loc>http://localhost:4000/blog/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/re/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/contact/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/projects/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/assets/resume.pdf</loc>
+<lastmod>2016-10-13T13:55:09-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/resume_old.pdf</loc>
+<lastmod>2016-09-05T23:16:05-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/resume/index.html</loc>
+<lastmod>2018-01-28T07:14:59-05:00</lastmod>
+</url>
 </urlset>
