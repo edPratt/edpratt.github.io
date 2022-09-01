@@ -33,7 +33,7 @@ $secondary: #FF7B7B;
 }
 
 body {
-  background-color: #e9edf0;
+  background-color: black;
   @extend %opensans;
   -webkit-font-smoothing: antialiased;
 }
@@ -88,7 +88,7 @@ button.btn, input.btn {
 }
 
 .main {
-  background-color: white;
+  background-color: black;
   border-left: solid 1px #cedfea;
   border-right: solid 1px #cedfea;
   &.container {
@@ -112,7 +112,7 @@ button.btn, input.btn {
 	2.0 Home Hero
 --------------------------------------------------------------*/
 .hero-container {
-  margin: 10em 0 9em 0;
+  margin: 1em 0 9em 0;
   @include bp-xsmall {
     margin: 5em 0 5em 0;
   }
@@ -122,7 +122,7 @@ button.btn, input.btn {
 }
 
 .hero-content {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   display: table;
   @include bp-medium {
@@ -315,26 +315,26 @@ button.btn, input.btn {
 	4.0 Footer
 --------------------------------------------------------------*/
 .site-footer {
-  font-size: 14px;
-  margin-top: 2em;
-  border-top: 1px solid #efefef;
-  padding: 1em 0;
-  p {
-    font-size: 12px;
-    font-weight: 600;
-    color: #9eb1bd;
-    margin: 0;
-    padding: 10px 0;
-    @include bp-xsmall {
-      text-align: center;
-    }
-  }
-  .section-jump {
-    float: right;
-    @include bp-xsmall {
-      float: none;
-    }
-  }
+  // font-size: 14px;
+  // margin-top: 2em;
+  // border-top: 1px solid #efefef;
+  // padding: 1em 0;
+  // p {
+  //   font-size: 12px;
+  //   font-weight: 600;
+  //   color: #9eb1bd;
+  //   margin: 0;
+  //   padding: 10px 0;
+  //   @include bp-xsmall {
+  //     text-align: center;
+  //   }
+  // }
+  // .section-jump {
+  //   float: right;
+  //   @include bp-xsmall {
+  //     float: none;
+  //   }
+  // }
 }
 
 /*--------------------------------------------------------------
