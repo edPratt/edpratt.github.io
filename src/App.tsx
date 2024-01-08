@@ -5,19 +5,10 @@ import './App.css';
 
 function App() {
   const [betSlip, setBetSlip] = useState<string>('');
+  const [betSlipPreview, setBetSlipPreview] = useState<string>('');
   const [apiResponse, setApiResponse] = useState<string[]>([]); // Assuming API response is an array of strings, TODO change, parse string on frontend send strcutre to backend, get back structured data
   const [apiError, setApiError] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
-
-  const exampleBetSlip = "Chigoziem Okonkwo of the Tennessee Titans will have 27 or more receiving yards against the Jacksonvi\
-    Evan Engram of the Jacksonville Jaguars will have 42 or more receiving yards against the Tennessee T\
-    Kyler Murray of the Arizona Cardinals will have 20 or more rushing yards against the Seattle Seahawk\
-    Joe Mixon of the Cincinnati Bengals will have 40 or more rushing yards against the Cleveland Browns\
-    Trevor Lawrence of the Jacksonville Jaguars will have 224 or more passing yards against the Tennesse\
-    Jared Goff of the Detroit Lions will have 211 or more passing yards against the Minnesota Vikings\
-    Baker Mayfield of the Tampa Bay Buccaneers will have over 221.5 passing yards\
-    Trevor Lawrence of the Jacksonville Jaguars will have 20 or more pass completions against the Tennes\
-    Baker Mayfield of the Tampa Bay Buccaneers will have 19 or more pass completions against the Carolin";
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -25,6 +16,7 @@ function App() {
     setIsLoading(true);
 
     const currentBetSlip = betSlip;
+    setBetSlipPreview(currentBetSlip);
     setBetSlip('');
 
     try {
@@ -70,16 +62,23 @@ function App() {
         {isLoading && <Spinner />} {/* Display spinner when loading */}
       </header>
       <div className='slip-example'>
-        <h3>Example Slip:</h3>
-        <div>Chigoziem Okonkwo of the Tennessee Titans will have 27 or more receiving yards against the Jacksonvi</div>
-        <div>Evan Engram of the Jacksonville Jaguars will have 42 or more receiving yards against the Tennessee T</div>
-        <div>Kyler Murray of the Arizona Cardinals will have 20 or more rushing yards against the Seattle Seahawk</div>
-        <div>Joe Mixon of the Cincinnati Bengals will have 40 or more rushing yards against the Cleveland Browns</div>
-        <div>Trevor Lawrence of the Jacksonville Jaguars will have 224 or more passing yards against the Tennesse</div>
-        <div>Jared Goff of the Detroit Lions will have 211 or more passing yards against the Minnesota Vikings</div>
-        <div>Baker Mayfield of the Tampa Bay Buccaneers will have over 221.5 passing yards</div>
-        <div>Trevor Lawrence of the Jacksonville Jaguars will have 20 or more pass completions against the Tennes</div>
-        <div>Baker Mayfield of the Tampa Bay Buccaneers will have 19 or more pass completions against the Carolin </div>
+        {!betSlipPreview ? (
+          <>
+            <h3>Example Slip:</h3>
+            <div>Chigoziem Okonkwo of the Tennessee Titans will have 27 or more receiving yards against the Jacksonvi</div>
+            <div>Evan Engram of the Jacksonville Jaguars will have 42 or more receiving yards against the Tennessee T</div>
+            <div>Kyler Murray of the Arizona Cardinals will have 20 or more rushing yards against the Seattle Seahawk</div>
+            <div>Joe Mixon of the Cincinnati Bengals will have 40 or more rushing yards against the Cleveland Browns</div>
+            <div>Trevor Lawrence of the Jacksonville Jaguars will have 224 or more passing yards against the Tennesse</div>
+            <div>Jared Goff of the Detroit Lions will have 211 or more passing yards against the Minnesota Vikings</div>
+            <div>Baker Mayfield of the Tampa Bay Buccaneers will have over 221.5 passing yards</div>
+            <div>Trevor Lawrence of the Jacksonville Jaguars will have 20 or more pass completions against the Tennes</div>
+            <div>Baker Mayfield of the Tampa Bay Buccaneers will have 19 or more pass completions against the Carolin </div>
+          </>
+        ) : (
+          <>{betSlipPreview}</>
+        )}
+
       </div>
 
       <div></div>
