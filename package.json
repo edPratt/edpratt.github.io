@@ -2,7 +2,7 @@
   "name": "projects",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://edpratt.github.io",
+  "homepage": "https://edpratt.github.io/projects",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
