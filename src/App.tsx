@@ -69,7 +69,7 @@ function App() {
       <div className='slip-example'>
         {showPreview && betSlipPreview ? (
           <>
-            <h3>Example Slip: (NFL/CFB/NHL only)</h3>
+            <h3>Example Slip: (NFL/CFB/NHL Only)</h3>
             <div>David Pastrnak of the Boston Bruins will have over 1.5 points</div>
             <div>Evan Engram of the Jacksonville Jaguars will have 42 or more receiving yards against the Tennessee T</div>
             <div>Kyler Murray of the Arizona Cardinals will have 20 or more rushing yards against the Seattle Seahawk</div>
@@ -81,7 +81,7 @@ function App() {
         ) : (
           <>
             {/* TODO add button to resubmit slip */}
-            <h3>Submitted Slip: (NFL only for now)</h3>
+            <h3>Submitted Slip: (NFL/CFB/NHL) Only</h3>
             {betSlipPreview.map((item, index) => (
               <div>{item}</div>
             ))}
@@ -89,8 +89,6 @@ function App() {
         )}
 
       </div>
-
-      <div></div>
       <form onSubmit={handleSubmit}>
         <textarea
           value={betSlip}

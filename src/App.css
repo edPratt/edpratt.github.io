@@ -6,7 +6,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 20vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,14 +27,15 @@
 }
 
 textarea {
-  margin-top: 20px;
+  width: 90%; /* Responsive width */
   padding: 10px;
+  margin: 20px auto; /* Centered with auto margins */
   border-radius: 5px;
   border: 1px solid #ccc;
+  resize: vertical; /* Allow only vertical resizing */
 }
 
 button {
-  margin-top: 10px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -61,8 +62,9 @@ button:hover {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 15px;
-  width: 200px;
+  width: 200px; /* Fixed width for desktop */
   text-align: left;
+  margin: 0 auto; /* Centering the card */
 }
 
 .response-card p {
@@ -71,11 +73,26 @@ button:hover {
 }
 
 .success {
-  border: 1px solid #4CAF50; /* Green border for success */
-  background-color: #e8f5e9; /* Light green background */
+  border: 1px solid #4CAF50;
+  background-color: #e8f5e9;
 }
 
 .failure {
-  border: 1px solid #f44336; /* Red border for failure */
-  background-color: #ffebee; /* Light red background */
+  border: 1px solid #f44336;
+  background-color: #ffebee;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .App-header {
+    min-height: 15vh; /* Adjust the header height on small screens */
+  }
+
+  .response-card {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  textarea {
+    width: 100%; /* Full width on smaller screens */
+  }
 }
