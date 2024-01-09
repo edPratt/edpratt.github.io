@@ -66,16 +66,14 @@ function App() {
       <div className='slip-example'>
         {showPreview && betSlipPreview ? (
           <>
-            <h3>Example Slip: (NFL only for now)</h3>
-            <div>Chigoziem Okonkwo of the Tennessee Titans will have 27 or more receiving yards against the Jacksonvi</div>
-            <div>Evan Engram of the Jacksonville Jaguars will have 42 or more receiving yards against the Tennessee T</div>
-            <div>Kyler Murray of the Arizona Cardinals will have 20 or more rushing yards against the Seattle Seahawk</div>
-            <div>Joe Mixon of the Cincinnati Bengals will have 40 or more rushing yards against the Cleveland Browns</div>
-            <div>Trevor Lawrence of the Jacksonville Jaguars will have 224 or more passing yards against the Tennesse</div>
-            <div>Jared Goff of the Detroit Lions will have 211 or more passing yards against the Minnesota Vikings</div>
-            <div>Baker Mayfield of the Tampa Bay Buccaneers will have over 221.5 passing yards</div>
-            <div>Trevor Lawrence of the Jacksonville Jaguars will have 20 or more pass completions against the Tennes</div>
-            <div>Baker Mayfield of the Tampa Bay Buccaneers will have 19 or more pass completions against the Carolin </div>
+            <h3>Example Slip: (NFL/CFB only for now)</h3>
+            <h4>Be sure to label the league at the end of each leg. See example below</h4>
+            <div>Evan Engram of the Jacksonville Jaguars will have 42 or more receiving yards against the Tennessee T nfl</div>
+            <div>Kyler Murray of the Arizona Cardinals will have 20 or more rushing yards against the Seattle Seahawk nfl</div>
+            <div>Joe Mixon of the Cincinnati Bengals will have 40 or more rushing yards against the Cleveland Browns nfl</div>
+            <div>Michael Penix Jr. of the Washington Huskies will have over 24.5 pass completions cfb</div>
+            <div>J.J. McCarthy of the Michigan Wolverines will have 16 or more pass completions against the Washingto cfb</div>
+            <div>J.J. McCarthy of the Michigan Wolverines will have over 1.5 passing TDs cfb</div>
           </>
         ) : (
           <>
