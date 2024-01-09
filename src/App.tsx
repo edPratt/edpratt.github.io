@@ -105,13 +105,19 @@ function App() {
         <div className="response-container">
           {apiResponse.map((item, index) => (
             <div className={`response-card ${isTargetMet(item) ? 'success' : 'failure'}`} key={index}>
-              <p style={item ? {} : { fontSize: '12px' }}>
-                {item ? item : "Unable to process this stat. It may be that the game hasn't started yet, or is too far back in time."}
-              </p>
+              {/* Displaying the corresponding bet slip item in small text */}
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+                <p style={{ fontSize: '10px', fontStyle: 'italic' }}>{betSlipPreview[index]}:</p>
+                <p style={item ? {} : { fontSize: '12px', color: 'red' }}>
+                  {item ? item : "Unable to process this stat. It may be that the game hasn't started yet, or is too far back in time."}
+                </p>
+              </div>
+
             </div>
           ))}
         </div>
       )}
+
     </div>
   );
 }
