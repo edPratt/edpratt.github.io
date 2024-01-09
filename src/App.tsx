@@ -5,10 +5,11 @@ import './App.css';
 
 function App() {
   const [betSlip, setBetSlip] = useState<string>('');
-  const [betSlipPreview, setBetSlipPreview] = useState<string>('');
+  const [betSlipPreview, setBetSlipPreview] = useState<string[]>([]);
   const [apiResponse, setApiResponse] = useState<string[]>([]); // Assuming API response is an array of strings, TODO change, parse string on frontend send strcutre to backend, get back structured data
   const [apiError, setApiError] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [showPreview, setShowPreview] = useState<boolean>(true);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -16,7 +17,8 @@ function App() {
     setIsLoading(true);
 
     const currentBetSlip = betSlip;
-    setBetSlipPreview(currentBetSlip);
+    setBetSlipPreview(currentBetSlip.split(/\r?\n/));
+    setShowPreview(false);
     setBetSlip('');
 
     try {
@@ -62,7 +64,7 @@ function App() {
         {isLoading && <Spinner />} {/* Display spinner when loading */}
       </header>
       <div className='slip-example'>
-        {!betSlipPreview ? (
+        {showPreview && betSlipPreview ? (
           <>
             <h3>Example Slip:</h3>
             <div>Chigoziem Okonkwo of the Tennessee Titans will have 27 or more receiving yards against the Jacksonvi</div>
@@ -76,7 +78,13 @@ function App() {
             <div>Baker Mayfield of the Tampa Bay Buccaneers will have 19 or more pass completions against the Carolin </div>
           </>
         ) : (
-          <>{betSlipPreview}</>
+          <>
+            {/* TODO add button to resubmit slip */}
+            <h3>Submitted Slip:</h3>
+            {betSlipPreview.map((item, index) => (
+              <div>{item}</div>
+            ))}
+          </>
         )}
 
       </div>
