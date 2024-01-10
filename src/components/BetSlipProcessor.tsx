@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Spinner from './Spinner';
+import { Spinner } from './Spinner';
 import './BetSlipProcessor.css'
 
 export const BetSlipProcessor = () => {
@@ -37,8 +37,6 @@ export const BetSlipProcessor = () => {
         } catch (error: any) {
             console.error('Error fetching data: ', error);
             setApiError('Error fetching data: ' + error.message);
-
-            // Optionally, restore the betSlip state if there's an error
             setBetSlip(currentBetSlip);
         }
 
@@ -48,8 +46,8 @@ export const BetSlipProcessor = () => {
     function isTargetMet(responseItem: string): boolean {
         if (!responseItem) return false;
         const parts = responseItem.split(', ');
-        const targetPart = parts[2]; // "Target: X"
-        const valuePart = parts[3]; // "Value: Y"
+        const targetPart = parts[2];
+        const valuePart = parts[3];
 
         if (!targetPart || !valuePart) return false;
 
@@ -62,7 +60,7 @@ export const BetSlipProcessor = () => {
     return (
         <div>
             {apiError && <p>Error: {apiError}</p>}
-            {isLoading && <Spinner />} {/* Display spinner when loading */}
+            {isLoading && <Spinner />}
             <div className='slip-example'>
                 {showPreview && betSlipPreview ? (
                     <>
@@ -107,12 +105,10 @@ export const BetSlipProcessor = () => {
                                     {item ? item : "Unable to process this stat. It may be that the game hasn't started yet, or is too far back in time."}
                                 </p>
                             </div>
-
                         </div>
                     ))}
                 </div>
             )}
-
         </div>
     );
 }

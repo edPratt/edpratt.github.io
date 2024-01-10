@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 export const HomePage = () => {
@@ -11,7 +10,7 @@ export const HomePage = () => {
       <h1 style={{ 
         marginBottom: '30px', 
         color: '#333' 
-      }}>Projects/etc. WIP</h1>
+      }}>projects/etc. WIP</h1>
 
       <nav style={{ 
         marginBottom: '20px', 
@@ -19,7 +18,7 @@ export const HomePage = () => {
       }}>
         <Link to="http://nts.social/" style={{
           textDecoration: 'none',
-          color: '#007bff',
+          color: '#28a745',
           padding: '10px 15px',
           margin: '5px',
           borderRadius: '5px',
@@ -31,9 +30,9 @@ export const HomePage = () => {
       <nav style={{ 
         display: 'inline-block'
       }}>
-        <Link to="/betslip" style={{
+        <Link to="/prop-parlay-tools" style={{
           textDecoration: 'none',
-          color: '#28a745',
+          color: '#007bff',
           padding: '10px 15px',
           margin: '5px',
           borderRadius: '5px',
